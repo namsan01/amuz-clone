@@ -1,7 +1,19 @@
-<script setup></script>
-
 <template>
-  <div>
-    <h2 class="">안녕하세요</h2>
+  <div id="app">
+    <HeaderTop />
+    <router-view />
   </div>
 </template>
+
+<script>
+import HeaderTop from './components/layout/Header.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HeaderTop
+  }
+}
+</script>
+
+<style></style>
